@@ -4,7 +4,6 @@
 
 // Copyright (c) 2025 Ametrine Foundation <business@ametrine.cc>
 
-use std::fs;
 use std::process::Command;
 
 pub fn mk_project(path: &str, lang: &str) {

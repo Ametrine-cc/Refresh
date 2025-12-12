@@ -5,7 +5,6 @@
 // Copyright (c) 2025 Ametrine Foundation <business@ametrine.cc>
 
 use std::env;
-use std::io;
 mod configuration;
 mod gitty;
 mod restock;
