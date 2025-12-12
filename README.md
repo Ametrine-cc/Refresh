@@ -1,6 +1,6 @@
 # Refresh
 
-**The Project Manager**
+**A lightweight command-line project manager**
 
 A lightweight command-line tool for creating and managing projects across multiple programming languages.
 
@@ -85,7 +85,9 @@ yay -S refresh
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Mozilla Public License 2.0 - see the [LICENSE](LICENSE) file for details.
+
+Copyright (c) 2025 Ametrine Foundation <business@ametrine.cc>
 
 ## 🙏 Acknowledgments
 

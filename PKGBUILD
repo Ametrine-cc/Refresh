@@ -8,7 +8,7 @@ license=('MIT')
 depends=('gcc-libs')
 makedepends=('rust' 'cargo')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/Ametrine-cc/Refresh/archive/v$pkgver.tar.gz")
-sha256sums=('SKIP')
+sha256sums=('2caf24137c92c44fde50765ebfb3e9ab8c12d5d9af1f8a263e97082e3cfacac9')
 
 build() {
     cd "$pkgname-$pkgver"

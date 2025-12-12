@@ -1,7 +1,11 @@
 [package]
 name = "refresh"
+authors = ["Ametrine Foundation <business@ametrine.cc>"]
+description = "A lightweight command-line project manager"
+repository = "https://github.com/Ametrine-cc/Refresh"
 version = "0.1.0"
 edition = "2024"
+license = "MPL-2.0"
 
 [dependencies]
 libc = "0.2.178"
