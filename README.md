@@ -43,6 +43,10 @@ refresh --help
 |----------|--------|
 | Rust     | ✅     |
 | Python   | ✅     |
+| Go       | ✅     |
+| Java | ✅     |
+| JavaScript | ✅     |
+| C# | ✅     |
 
 More languages coming soon!
 

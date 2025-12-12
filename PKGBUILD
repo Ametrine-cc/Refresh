@@ -4,11 +4,11 @@ pkgrel=1
 pkgdesc="A lightweight command-line project manager"
 arch=('x86_64')
 url="https://github.com/Ametrine-cc/Refresh"
-license=('MIT')
+license=('MPL-2.0')
 depends=('gcc-libs')
 makedepends=('rust' 'cargo')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/Ametrine-cc/Refresh/archive/v$pkgver.tar.gz")
-sha256sums=('2caf24137c92c44fde50765ebfb3e9ab8c12d5d9af1f8a263e97082e3cfacac9')
+sha256sums=('2caf24137c92c44fde50765ebfb3e9ab8c12d5d9af1f8a263e97082e3cfacac9  refresh-0.1.0.tar.gz')
 
 build() {
     cd "$pkgname-$pkgver"
