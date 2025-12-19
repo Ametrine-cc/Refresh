@@ -8,4 +8,6 @@ edition = "2024"
 license = "MPL-2.0"
 
 [dependencies]
+colorama = "1.0.0"
 libc = "0.2.178"
+termcolor = "1.4.1"

@@ -4,6 +4,7 @@
 
 // Copyright (c) 2025 Ametrine Foundation <business@ametrine.cc>
 
+use colorama::Colored;
 use std::io::{self, Read, Write};
 use std::process::Command;
 use std::process::exit;
@@ -72,7 +73,7 @@ pub fn choose_lang(new_path: &str) {
                     "C#" => {
                         make_project("C#", new_path);
                     }
-                    "go" => {
+                    "Go" => {
                         make_project("Go", new_path);
                     }
                     "JavaScript" => {

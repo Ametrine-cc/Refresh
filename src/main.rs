@@ -3,13 +3,18 @@
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 // Copyright (c) 2025 Ametrine Foundation <business@ametrine.cc>
-
+//
+use colorama::Colored;
 use std::env;
+use std::process::Command;
 mod configuration;
 mod gitty;
 mod restock;
 
 fn main() {
+    let mut cmd = Command::new("clear");
+    cmd.status().expect("failed to clear screen");
+
     let args: Vec<String> = env::args().collect();
 
     if args.len() < 2 {
@@ -22,8 +27,8 @@ fn main() {
     match command.as_str() {
         "init" => {
             if args.len() < 3 {
-                eprintln!("Error: init command requires a path");
-                eprintln!("Usage: refresh init <path>");
+                let path = ".";
+                configuration::choose_lang(path);
                 return;
             }
             let path = &args[2];
@@ -34,7 +39,11 @@ fn main() {
             print_usage();
         }
         _ => {
-            eprintln!("Error: Unknown command '{}'", command);
+            let mut s = String::from("Error: Unknown command");
+            let mut command = String::from(command);
+            command.color("green").style("bold");
+            s.color("red").style("bold");
+            eprintln!("{} '{}'", s, command);
             print_usage();
         }
     }
